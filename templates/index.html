@@ -27,35 +27,33 @@
   </head>
   <body class="bg-nav">
     <header class="p-3 text-white">
-  <div class="container" style="margin-bottom: 30px;">
-    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a class="navbar-brand" href="{{url_for('index')}}">
-        <div class="logo-image">
-          <img
-            src="{{url_for('static', filename='/img/logo.png')}}"
-            width="300px"
-            class="img-fluid"
-          />
+      <div class="container" style="margin-bottom: 30px">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+        >
+          <a class="navbar-brand" href="{{url_for('index')}}">
+            <div class="logo-image">
+              <img
+                src="{{url_for('static', filename='/img/logo.png')}}"
+                width="300px"
+                class="img-fluid"
+              />
+            </div>
+          </a>
+          <div class="text-end ml-auto">
+            <a class="{{link1}}" href="{{url_for('login')}}">{{value1}}</a>
+            <a class="{{link2}}" href="{{url_for('register')}}">{{value2}}</a>
+          </div>
         </div>
-      </a>
-      <div class="text-end ml-auto">
-        <a
-        class="{{link1}}"
-        href="{{url_for('login')}}"
-        >{{value1}}</a
-      >
-      <a
-        class="{{link2}}"
-        href="{{url_for('register')}}"
-        >{{value2}}</a
-      >
       </div>
-    </div>
-  </div>
-</header>
-    {% block body %} 
-    <div class="col-md-8" style="margin: 50px auto; text-align: center;" >
-       <img src="{{url_for('static', filename='img/home.png')}}" alt="collage of languages" width="900px">
+    </header>
+    {% block body %}
+    <div class="col-md-8" style="margin: 50px auto; text-align: center">
+      <img
+        src="{{url_for('static', filename='img/home.png')}}"
+        alt="collage of languages"
+        width="900px"
+      />
     </div>
     {% endblock body %}
     <!-- Optional JavaScript -->
