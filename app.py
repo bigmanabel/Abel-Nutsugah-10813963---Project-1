@@ -36,7 +36,7 @@ def register():
         getUserPassword = request.form.get('password')
         #Check if data already exists in database
         authenticate = Users.query.filter(or_(Users.full_name==getUserName, Users.email==getUserEmail)).first()
-        #If there's no data, set variables to None and return an error message
+        #If there's no data from the form, set variables to None and return an error message
         if(getUserName=='' and getUserEmail=='' and getUserPassword==''):
             getUserName = None
             getUserEmail = None
