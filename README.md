@@ -9,6 +9,6 @@ Code for creating the database
 1. Open a console and navigate to the project folder
 2. Enter py to switch to the Python Console
 3. Enter the following:
-# from app import db
-# db.create_all()
++ from app import db
++ db.create_all()
 4. You can exit from the Python Console with exit()
